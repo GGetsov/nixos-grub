@@ -9,7 +9,7 @@ in
   stdenvNoCC.mkDerivation {
     pname = "nixos-grub";
     inherit version;
-    src = ./src;
+    src = ./src/;
     installPhase = "cp -r . $out";
     meta = {
       description = "IDK a theme i modified to match catppuccin macchiato color scheme";
