@@ -2,14 +2,12 @@
   lib,
   stdenvNoCC,
 }:
-let
-  version = "1.0.0";
-in
+{
   boot.loader.grub = {
     splashImage = src/splash_image.png;
     theme = stdenvNoCC.mkDerivation {
       pname = "nixos-grub";
-      inherit version;
+      version = "1.0.0";
       src = ./src;
       installPhase = "cp -r . $out";
       meta = {
@@ -18,4 +16,5 @@ in
         platforms = lib.platforms.linux;
       };
     };
-  }
+  };
+}
