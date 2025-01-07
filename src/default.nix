@@ -5,7 +5,7 @@
 let
   version = "1.0.0";
 in
-  boot.loader.grub.splashImage = src/splash_image.png;
+  # boot.loader.grub.splashImage = src/splash_image.png;
   stdenvNoCC.mkDerivation {
     pname = "nixos-grub";
     inherit version;
