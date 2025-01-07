@@ -1,6 +1,7 @@
 { lib, stdenvNoCC, pkgs, ... }:
 {
   boot.loader.grub = {
+    #selecting a splashImage matching the real one makes switching thru menus smoother
     splashImage = src/splash_image.png;
     theme = pkgs.stdenv.mkDerivation {
       pname = "nixos-grub";
