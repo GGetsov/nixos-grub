@@ -1,8 +1,8 @@
-{ lib, stdenvNoCC, ... }:
+{ lib, stdenvNoCC, pkgs, ... }:
 {
   boot.loader.grub = {
     splashImage = src/splash_image.png;
-    theme = stdenvNoCC.mkDerivation {
+    theme = pkgs.stdenv.mkDerivation {
       pname = "nixos-grub";
       version = "1.0.0";
       src = ./src;
