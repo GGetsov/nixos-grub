@@ -2,7 +2,7 @@
 {
   boot.loader.grub = {
     splashImage = src/splash_image.png;
-    theme = (pkgs.stdenv.mkDerivation {
+    theme = pkgs.stdenv.mkDerivation {
       pname = "nixos-grub";
       version = "1.0.0";
       src = ./src;
@@ -12,6 +12,6 @@
         license = lib.licenses.gpl3Only;
         platforms = lib.platforms.linux;
       };
-    });
+    };
   };
 }
