@@ -1,6 +1,9 @@
 desktop-color: "#181926"
 
-title-text:" "
+title-text:""
+desktop-image: "splash_image.png"
+desktop-image-scale-method: "stretch"
+desktop-color: "#181926"
 message-color: "#757575"
 terminal-left: "0"
 terminal-top: "0"
