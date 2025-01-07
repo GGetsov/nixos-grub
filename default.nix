@@ -1,9 +1,4 @@
-{
-  config,
-  options,
-  lib,
-  stdenvNoCC,
-}:
+{ lib, stdenvNoCC, ... }:
 {
   boot.loader.grub = {
     splashImage = src/splash_image.png;
